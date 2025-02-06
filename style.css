@@ -1,0 +1,136 @@
+body {
+    background-color: #c7cfdd;;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    background-image: url('images/header_bg.jpg');
+    background-size: cover; 
+    background-position: center; 
+    text-align: center;
+    padding: 150px 0;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.navbar {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #505b6d; 
+    padding: 1px; 
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+}
+
+.navbar a {
+    color: aliceblue; 
+    text-decoration: none; 
+    padding: 10px; 
+    margin: 0 10px; 
+    text-align: center;
+    font-size: 25px; 
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.about_container {
+    text-align: left;
+    padding: 10px;
+    margin: 20px; 
+    border: 2px solid black; 
+    border-radius: 20px;
+    width: 350px; 
+    height: 600px; 
+}
+
+.content_container {
+    text-align: left;
+    padding: 10px;
+    margin: 20px; 
+    border: 2px solid black; 
+    border-radius: 20px;
+    width: 650px; 
+    height: 600px; 
+}
+
+.circle-image1, .circle-image2 {
+    align-items: center;
+    width: 100%; 
+    height: 85%; 
+    padding: 1px;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1150px) {
+    .header {
+        padding: 80px 0; 
+    }
+    .content_container{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar a {
+        font-size: 20px; 
+        padding: 8px;
+    }
+
+    .header {
+        padding: 80px 0; 
+    }
+
+    .container {
+        justify-content: center;
+        width: 80%;
+        margin: 20px;
+    }
+
+    .about_container, .content_container {
+        font-size: .30cm;
+        width: 80%; 
+        margin: 10px; 
+        
+
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .navbar a {
+        font-size: 14px; 
+    }
+
+    .header {
+        padding: 50px 0; 
+    }
+
+    .about_container, .content_container {
+        font-size: .25cm;
+        width: 90%; 
+        height: 400px;
+        margin: 10px; 
+        
+    }
+}
